@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
     <title>My projects | YouXi He&#39;s website blog</title>
-    <meta name="keywords" content="hexo,theme,otakism,otaku"/>
+    <meta name="keywords" content="hexo,theme,otakism,otaku, python, html"/>
     <meta name="HandheldFriendly" content="True"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="google-site-verification" content=""/>
@@ -60,7 +60,7 @@
         <a id="logo" href="/">
             <img src="/img/logo.png"/>
             <span id="site-desc">
-                otaku keeps alive
+                一个初中生的个人博客网站,由github托管
             </span>
         </a>
         <button id="site-nav-switch">
@@ -101,6 +101,15 @@
 
     <footer id="footer" class="clearfix">
 
+    
+        <div class="search">
+            <form name="searchform" id="searchform" class="u-search-form">
+                <input type="text" id="searchinput" class="u-search-input" placeholder="Looking for something?"/>
+                <button type="submit" id="u-search-btn-submit" class="u-search-btn-submit">
+                    <span class="icon icon-search"></span>
+                </button>
+            </form>
+        </div>
     
 
     <div class="social-wrapper">
@@ -235,7 +244,7 @@
   var AZURE_SERVICE_NAME = "";
   var AZURE_INDEX_NAME = "";
   var AZURE_QUERY_KEY = "";
-  var SEARCH_SERVICE = "";
+  var SEARCH_SERVICE = "algolia";
   var universalSearchConfig = {};
   if (SEARCH_SERVICE === 'google') {
     universalSearchConfig = {

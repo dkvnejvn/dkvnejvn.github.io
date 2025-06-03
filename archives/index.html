@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     
     <title>Archives | YouXi He&#39;s website blog</title>
-    <meta name="keywords" content="hexo,theme,otakism,otaku"/>
+    <meta name="keywords" content="hexo,theme,otakism,otaku, python, html"/>
     <meta name="HandheldFriendly" content="True"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="google-site-verification" content=""/>
@@ -58,7 +58,7 @@
         <a id="logo" href="/">
             <img src="/img/logo.png"/>
             <span id="site-desc">
-                otaku keeps alive
+                一个初中生的个人博客网站,由github托管
             </span>
         </a>
         <button id="site-nav-switch">
@@ -86,6 +86,13 @@
             </h3>
             
             <div class="archive-item archive-post">
+                <a href="/2025/06/03/%E9%AB%98%E8%80%83%E4%B8%93%E7%AF%87/">
+                    <time>06-03</time>
+                    <span class="title">高考专篇</span>
+                </a>
+            </div>
+            
+            <div class="archive-item archive-post">
                 <a href="/2025/06/02/%E8%A5%BF%E5%AE%89%E5%B8%822024%E5%B9%B4%E4%B8%AD%E8%80%83%E6%8B%9B%E7%94%9F%E8%AE%A1%E5%88%92/">
                     <time>06-02</time>
                     <span class="title">西安市2024年中考招生计划</span>
@@ -110,6 +117,15 @@
 
     <footer id="footer" class="clearfix">
 
+    
+        <div class="search">
+            <form name="searchform" id="searchform" class="u-search-form">
+                <input type="text" id="searchinput" class="u-search-input" placeholder="Looking for something?"/>
+                <button type="submit" id="u-search-btn-submit" class="u-search-btn-submit">
+                    <span class="icon icon-search"></span>
+                </button>
+            </form>
+        </div>
     
 
     <div class="social-wrapper">
@@ -244,7 +260,7 @@
   var AZURE_SERVICE_NAME = "";
   var AZURE_INDEX_NAME = "";
   var AZURE_QUERY_KEY = "";
-  var SEARCH_SERVICE = "";
+  var SEARCH_SERVICE = "algolia";
   var universalSearchConfig = {};
   if (SEARCH_SERVICE === 'google') {
     universalSearchConfig = {
